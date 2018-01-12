@@ -2,6 +2,9 @@
 
 A list of public places that don't play music.
 
+"And my people shall dwell in a peaceable habitation, and in sure dwellings, and
+in quiet resting places;" -- Isaiah 32:18
+
 ## Restaurants
 
 - Shu Jiao Fu Zhou
