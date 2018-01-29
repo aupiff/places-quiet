@@ -10,8 +10,20 @@ in quiet resting places;" -- Isaiah 32:18
 - Shu Jiao Fu Zhou
     + Address: 118 Eldridge St, New York, NY 10002
 
+- Lily's 74
+    + Address: 307 Amsterdam Ave, New York, NY 10023
+    + NB: horrible food
+
+- 2nd Avenue Deli
+    + Address: 162 E 33rd St, New York, NY 10016
+
 - 99 Cents Fresh Pizza
     + Address: 383 Canal St, New York, NY 10013
+
+- Tal Bagels (3 locations)
+    + Address: 333 East 86th St., New York, NY 10028
+    + Address: 1228 Lexington Ave, New York, NY 10028
+    + Address: 357 1st Ave, New York, NY 10010
 
 ## Cafés
 
