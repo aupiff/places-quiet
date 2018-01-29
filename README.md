@@ -32,3 +32,7 @@ in quiet resting places;" -- Isaiah 32:18
 
 - New York Public Library for the Performing Arts Café
     + Address: 40 Lincoln Center Plaza, New York, NY 10023
+
+- NYIT Metro Cafe
+    + Address: 1849 Broadway, New York City, NY 10023
+    + NB: horrible food
