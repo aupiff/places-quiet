@@ -1,4 +1,5 @@
 restaurants:
+
     - name: Shu Jiao Fu Zhou
       address: 118 Eldridge St, New York, NY 10002
       description: Fuzhounese dumpling house
@@ -29,6 +30,7 @@ restaurants:
       description: Bagel Shop
 
 cafes:
+
     - name: The Hungarian Pastry Shop
       address: 1030 Amsterdam Ave, New York, NY 10025
       description: Café & bakery
