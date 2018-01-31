@@ -7,5 +7,12 @@ Quiet place data in [data.yaml](data.yaml).
 ## Generating HTML pages
 
 ```
-mustache data.yaml index.mustache
+$ mustache data.yaml index.mustache
+```
+
+## Running the mockup server
+
+```
+$ cd mockups
+$ ./build v4
 ```
