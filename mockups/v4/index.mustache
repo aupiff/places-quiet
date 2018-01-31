@@ -4,64 +4,35 @@
   <title> </title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
-<link href="https://fonts.googleapis.com/css?family=Fira+Mono:400,400i,600,600i" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed" rel="stylesheet">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
 
   <style type="text/css">
 
   .condensed {font-family: 'Fira Sans Extra Condensed';}
-
-.foo a {text-decoration: none;}
-  a {color: inherit;}
-  body {background: #f5f3eb;color: #0869ab}
+  a {color: inherit;text-decoration: none;}
+  .blue {color:blue;}
   </style>
 
-  <body class="pa4 center f5 lh-copy sans-serif" style="font-family: 'Fira Mono'">
-    
-<div class="">
+  <body class="pa4 center f4 lh-copy sans-serif" style="font-family: 'VT323'">
+   
+
+    <div class="w-60 fr mv5">
+      <B>Places Quiet</b><br>
+        A directory of places in New York City that don't play music.
+    </div>
 
 
-<div class="foo fl w-100 f5">
+    <div class="foo fl w-100">
 
 
-{{#places}}
-  <a class="mv4 db bb b--black bw1" href="fds">
-    <div class="fl w-50">{{name}}</div>
-    <div class="fl w-30">{{description}}</div>
-    <div class="fr">{{address}}</div>
-  </a>
-{{/places}}
+    {{#places}}
+      <a class="db bt pv2" href="fds">
+        <span class="blue db fl w-40">{{name}}</span>
+        <div class="fl w-40">{{address}}</div>
+        <span class="fr tr w-20">{{description}}</span>
+        <div class="cf"></div>
+      </a>
+    {{/places}}
 
 
 

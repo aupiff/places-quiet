@@ -11,14 +11,14 @@
 
   </style>
   <body class="pa4 center f5 lh-copy sans-serif" style="font-family: 'Work Sans', sans-serif;font-weight:300">
-
+   
     <div class="w-20 fl">
 
       <div class="mv4">
         <span style="font-weight:400" class="db">Places Quiet</span>
         A directory of places in New York City that don't play music.
       </div>
-
+  
       <label class="db mv1">
         <input type="checkbox" class="category_toggle mr1" data-category="Restaurant" checked> Restaurants
       </label>
@@ -34,8 +34,11 @@
 
     <div class="w-80 fl pl5">
 
+<!--     <input placeholder="Search for quiet place..." type="text" name="search" id="search_input" class="pv2 w-100 ph3 bn bb b--black-20"/>
+
     <div id="results_list" class="bb pv4" style="display:none">
     </div>
+ -->
 
       <p class="mv4 place"
          data-category="Restaurant"
@@ -334,7 +337,7 @@
 
       var checked = el.checked;
       var place_els = document.querySelectorAll('.place');
-
+      
       place_els.forEach(function(place_el){
 
         var place_category = place_el.getAttribute('data-category');
