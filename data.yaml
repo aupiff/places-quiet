@@ -17,6 +17,30 @@ restaurants:
       address: 383 Canal St, New York, NY 10013
       description: Dollar pizza
 
+    - name: 99 Cents Fresh Pizza
+      Address: 143 W 40th St, New York, NY 10018
+      description: Dollar pizza
+      notes: not verified
+
+    - name: 99 Cents Fresh Pizza
+      address: 1723 Broadway, New York, NY 10019
+      description: Dollar pizza
+
+    - name: 99 Cents Fresh Pizza
+      address: 473 Lexington Ave, New York, NY 10017
+      description: Dollar pizza
+      notes: not verified
+
+    - name: 99 Cents Fresh Pizza
+      address: 201 E 34th St B, New York, NY 10016
+      description: Dollar pizza
+      notes: not verified
+
+    - name: 99 Cents Fresh Pizza
+      address: 151 E 43rd St, New York, NY 10017
+      description: Dollar pizza
+      notes: not verified
+
     - name: Tal Bagels (Upper East Side on 86th)
       address: 333 East 86th St., New York, NY 10028
       description: Bagel Shop
