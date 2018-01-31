@@ -11,14 +11,14 @@ restaurants:
 
     - name: 2nd Avenue Deli
       address: 162 E 33rd St, New York, NY 10016
-      comments: Jewish Deli
+      description: Jewish Deli
 
     - name: 99 Cents Fresh Pizza
       address: 383 Canal St, New York, NY 10013
       description: Dollar pizza
 
     - name: 99 Cents Fresh Pizza
-      Address: 143 W 40th St, New York, NY 10018
+      address: 143 W 40th St, New York, NY 10018
       description: Dollar pizza
       notes: not verified
 
