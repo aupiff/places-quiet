@@ -1,37 +1,357 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<title>places quiet</title>
 <meta charset="utf-8">
-</head>
-<body>
+  <title> </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+  <style type="text/css">
+  label {cursor: pointer;}
+  label:hover {background: #f1f1f1}
+  #places:empty:before {content: "No places..."}
 
-<h1>places quiet</h1>
+  </style>
+  <body class="pa4 center f5 lh-copy sans-serif" style="font-family: 'Work Sans', sans-serif;font-weight:300">
+   
+    <div class="w-20 fl">
 
-<p>A list of public places that don't play music.</p>
+      <div class="mv4">
+        <span style="font-weight:400" class="db">Places Quiet</span>
+        A directory of places in New York City that don't play music.
+      </div>
+  
+      <label class="db mv1">
+        <input type="checkbox" class="category_toggle mr1" data-category="Restaurant" checked> Restaurants
+      </label>
+      <label class="db mv1">
+        <input type="checkbox" class="category_toggle mr1" data-category="Café" checked> Cafés
+      </label>
 
-<br>
+      <div class="mv4">
+        Know someplace quiet?<br>
+        <a href="https://github.com/aupiff/places-quiet/issues/new">Share a quiet place</a>
+      </div>
+    </div>
 
-  <p><b>Shu Jiao Fu Zhou</b> - 118 Eldridge St, New York, NY 10002 - Fuzhounese dumpling house </p>
-  <p><b>Lily&#39;s 74</b> - 307 Amsterdam Ave, New York, NY 10023 - Shanghainese restaurant -- horrible food</p>
-  <p><b>2nd Avenue Deli</b> - 162 E 33rd St, New York, NY 10016 - Jewish Deli </p>
-  <p><b>99 Cents Fresh Pizza</b> - 383 Canal St, New York, NY 10013 - Dollar pizza </p>
-  <p><b>99 Cents Fresh Pizza</b> - 143 W 40th St, New York, NY 10018 - Dollar pizza </p>
-  <p><b>99 Cents Fresh Pizza</b> - 1723 Broadway, New York, NY 10019 - Dollar pizza </p>
-  <p><b>99 Cents Fresh Pizza</b> - 473 Lexington Ave, New York, NY 10017 - Dollar pizza </p>
-  <p><b>99 Cents Fresh Pizza</b> - 201 E 34th St B, New York, NY 10016 - Dollar pizza </p>
-  <p><b>99 Cents Fresh Pizza</b> - 151 E 43rd St, New York, NY 10017 - Dollar pizza </p>
-  <p><b>Tal Bagels (Upper East Side on 86th)</b> - 333 East 86th St., New York, NY 10028 - Bagel Shop </p>
-  <p><b>Tal Bagels (Upper East Side on Lexington)</b> - 1228 Lexington Ave, New York, NY 10028 - Bagel Shop </p>
-  <p><b>Tal Bagels (Lower East Side)</b> - 357 1st Ave, New York, NY 10010 - Bagel Shop </p>
+    <div class="w-80 fl pl5">
 
-  <p><b>The Hungarian Pastry Shop</b> - 1030 Amsterdam Ave, New York, NY 10025 - Café &amp; bakery </p>
-  <p><b>New York Public Library for the Performing Arts Café</b> - 40 Lincoln Center Plaza, New York, NY 10023 - Café </p>
-  <p><b>NYIT Metro Cafe</b> - 1849 Broadway, New York City, NY 10023 - Café -- horrible food</p>
+<!--     <input placeholder="Search for quiet place..." type="text" name="search" id="search_input" class="pv2 w-100 ph3 bn bb b--black-20"/>
 
-<br>
+    <div id="results_list" class="bb pv4" style="display:none">
+    </div>
+ -->
 
-<p>&quot;And my people shall dwell in a peaceable habitation, and in sure dwellings, and in quiet resting places;&quot; -- Isaiah 32:18</p>
+      <p class="mv4 place"
+         data-category="Restaurant"
+         data-address="118 Eldridge St, New York, NY 10002"
+         data-name="Shu Jiao Fu Zhou"
+         data-comments=""
+         data-description="Fuzhounese dumpling house">
+        <span style="font-weight:400">Shu Jiao Fu Zhou</span> - Fuzhounese dumpling house<br>
+        <span class="i">118 Eldridge St, New York, NY 10002</span>
+      </p>
+      <p class="mv4 place"
+         data-category="Restaurant"
+         data-address="307 Amsterdam Ave, New York, NY 10023"
+         data-name="Lily&#39;s 74"
+         data-comments="horrible food"
+         data-description="Shanghainese restaurant">
+        <span style="font-weight:400">Lily&#39;s 74</span> - Shanghainese restaurant<br>
+        <span class="i">307 Amsterdam Ave, New York, NY 10023</span>
+      </p>
+      <p class="mv4 place"
+         data-category="Restaurant"
+         data-address="162 E 33rd St, New York, NY 10016"
+         data-name="2nd Avenue Deli"
+         data-comments=""
+         data-description="Jewish Deli">
+        <span style="font-weight:400">2nd Avenue Deli</span> - Jewish Deli<br>
+        <span class="i">162 E 33rd St, New York, NY 10016</span>
+      </p>
+      <p class="mv4 place"
+         data-category="Restaurant"
+         data-address="383 Canal St, New York, NY 10013"
+         data-name="99 Cents Fresh Pizza"
+         data-comments=""
+         data-description="Dollar pizza">
+        <span style="font-weight:400">99 Cents Fresh Pizza</span> - Dollar pizza<br>
+        <span class="i">383 Canal St, New York, NY 10013</span>
+      </p>
+      <p class="mv4 place"
+         data-category="Restaurant"
+         data-address="143 W 40th St, New York, NY 10018"
+         data-name="99 Cents Fresh Pizza"
+         data-comments=""
+         data-description="Dollar pizza">
+        <span style="font-weight:400">99 Cents Fresh Pizza</span> - Dollar pizza<br>
+        <span class="i">143 W 40th St, New York, NY 10018</span>
+      </p>
+      <p class="mv4 place"
+         data-category="Restaurant"
+         data-address="1723 Broadway, New York, NY 10019"
+         data-name="99 Cents Fresh Pizza"
+         data-comments=""
+         data-description="Dollar pizza">
+        <span style="font-weight:400">99 Cents Fresh Pizza</span> - Dollar pizza<br>
+        <span class="i">1723 Broadway, New York, NY 10019</span>
+      </p>
+      <p class="mv4 place"
+         data-category="Restaurant"
+         data-address="473 Lexington Ave, New York, NY 10017"
+         data-name="99 Cents Fresh Pizza"
+         data-comments=""
+         data-description="Dollar pizza">
+        <span style="font-weight:400">99 Cents Fresh Pizza</span> - Dollar pizza<br>
+        <span class="i">473 Lexington Ave, New York, NY 10017</span>
+      </p>
+      <p class="mv4 place"
+         data-category="Restaurant"
+         data-address="201 E 34th St B, New York, NY 10016"
+         data-name="99 Cents Fresh Pizza"
+         data-comments=""
+         data-description="Dollar pizza">
+        <span style="font-weight:400">99 Cents Fresh Pizza</span> - Dollar pizza<br>
+        <span class="i">201 E 34th St B, New York, NY 10016</span>
+      </p>
+      <p class="mv4 place"
+         data-category="Restaurant"
+         data-address="151 E 43rd St, New York, NY 10017"
+         data-name="99 Cents Fresh Pizza"
+         data-comments=""
+         data-description="Dollar pizza">
+        <span style="font-weight:400">99 Cents Fresh Pizza</span> - Dollar pizza<br>
+        <span class="i">151 E 43rd St, New York, NY 10017</span>
+      </p>
+      <p class="mv4 place"
+         data-category="Restaurant"
+         data-address="333 East 86th St., New York, NY 10028"
+         data-name="Tal Bagels (Upper East Side on 86th)"
+         data-comments=""
+         data-description="Bagel Shop">
+        <span style="font-weight:400">Tal Bagels (Upper East Side on 86th)</span> - Bagel Shop<br>
+        <span class="i">333 East 86th St., New York, NY 10028</span>
+      </p>
+      <p class="mv4 place"
+         data-category="Restaurant"
+         data-address="1228 Lexington Ave, New York, NY 10028"
+         data-name="Tal Bagels (Upper East Side on Lexington)"
+         data-comments=""
+         data-description="Bagel Shop">
+        <span style="font-weight:400">Tal Bagels (Upper East Side on Lexington)</span> - Bagel Shop<br>
+        <span class="i">1228 Lexington Ave, New York, NY 10028</span>
+      </p>
+      <p class="mv4 place"
+         data-category="Restaurant"
+         data-address="357 1st Ave, New York, NY 10010"
+         data-name="Tal Bagels (Lower East Side)"
+         data-comments=""
+         data-description="Bagel Shop">
+        <span style="font-weight:400">Tal Bagels (Lower East Side)</span> - Bagel Shop<br>
+        <span class="i">357 1st Ave, New York, NY 10010</span>
+      </p>
+      <p class="mv4 place"
+         data-category="Café"
+         data-address="1030 Amsterdam Ave, New York, NY 10025"
+         data-name="The Hungarian Pastry Shop"
+         data-comments=""
+         data-description="Café &amp; bakery">
+        <span style="font-weight:400">The Hungarian Pastry Shop</span> - Café &amp; bakery<br>
+        <span class="i">1030 Amsterdam Ave, New York, NY 10025</span>
+      </p>
+      <p class="mv4 place"
+         data-category="Café"
+         data-address="40 Lincoln Center Plaza, New York, NY 10023"
+         data-name="New York Public Library for the Performing Arts Café"
+         data-comments=""
+         data-description="Café">
+        <span style="font-weight:400">New York Public Library for the Performing Arts Café</span> - Café<br>
+        <span class="i">40 Lincoln Center Plaza, New York, NY 10023</span>
+      </p>
+      <p class="mv4 place"
+         data-category="Café"
+         data-address="1849 Broadway, New York City, NY 10023"
+         data-name="NYIT Metro Cafe"
+         data-comments="horrible food"
+         data-description="Café">
+        <span style="font-weight:400">NYIT Metro Cafe</span> - Café<br>
+        <span class="i">1849 Broadway, New York City, NY 10023</span>
+      </p>
+</div>
 
+<script src="https://unpkg.com/lunr/lunr.js"></script>
+<script type="text/javascript">
+
+  var places = [
+    {
+      name: "Shu Jiao Fu Zhou",
+      description: "Fuzhounese dumpling house",
+      comments: "",
+      address: "118 Eldridge St, New York, NY 10002",
+      category: "Restaurant"
+    },
+    {
+      name: "Lily&#39;s 74",
+      description: "Shanghainese restaurant",
+      comments: "horrible food",
+      address: "307 Amsterdam Ave, New York, NY 10023",
+      category: "Restaurant"
+    },
+    {
+      name: "2nd Avenue Deli",
+      description: "Jewish Deli",
+      comments: "",
+      address: "162 E 33rd St, New York, NY 10016",
+      category: "Restaurant"
+    },
+    {
+      name: "99 Cents Fresh Pizza",
+      description: "Dollar pizza",
+      comments: "",
+      address: "383 Canal St, New York, NY 10013",
+      category: "Restaurant"
+    },
+    {
+      name: "99 Cents Fresh Pizza",
+      description: "Dollar pizza",
+      comments: "",
+      address: "143 W 40th St, New York, NY 10018",
+      category: "Restaurant"
+    },
+    {
+      name: "99 Cents Fresh Pizza",
+      description: "Dollar pizza",
+      comments: "",
+      address: "1723 Broadway, New York, NY 10019",
+      category: "Restaurant"
+    },
+    {
+      name: "99 Cents Fresh Pizza",
+      description: "Dollar pizza",
+      comments: "",
+      address: "473 Lexington Ave, New York, NY 10017",
+      category: "Restaurant"
+    },
+    {
+      name: "99 Cents Fresh Pizza",
+      description: "Dollar pizza",
+      comments: "",
+      address: "201 E 34th St B, New York, NY 10016",
+      category: "Restaurant"
+    },
+    {
+      name: "99 Cents Fresh Pizza",
+      description: "Dollar pizza",
+      comments: "",
+      address: "151 E 43rd St, New York, NY 10017",
+      category: "Restaurant"
+    },
+    {
+      name: "Tal Bagels (Upper East Side on 86th)",
+      description: "Bagel Shop",
+      comments: "",
+      address: "333 East 86th St., New York, NY 10028",
+      category: "Restaurant"
+    },
+    {
+      name: "Tal Bagels (Upper East Side on Lexington)",
+      description: "Bagel Shop",
+      comments: "",
+      address: "1228 Lexington Ave, New York, NY 10028",
+      category: "Restaurant"
+    },
+    {
+      name: "Tal Bagels (Lower East Side)",
+      description: "Bagel Shop",
+      comments: "",
+      address: "357 1st Ave, New York, NY 10010",
+      category: "Restaurant"
+    },
+    {
+      name: "The Hungarian Pastry Shop",
+      description: "Café &amp; bakery",
+      comments: "",
+      address: "1030 Amsterdam Ave, New York, NY 10025",
+      category: "Café"
+    },
+    {
+      name: "New York Public Library for the Performing Arts Café",
+      description: "Café",
+      comments: "",
+      address: "40 Lincoln Center Plaza, New York, NY 10023",
+      category: "Café"
+    },
+    {
+      name: "NYIT Metro Cafe",
+      description: "Café",
+      comments: "horrible food",
+      address: "1849 Broadway, New York City, NY 10023",
+      category: "Café"
+    },
+  ];
+  
+  var index = lunr(function () {
+    
+    this.ref('address');
+    this.field('name');
+    this.field('comments');
+    this.field('description');
+    this.field('address');
+    this.field('category');
+
+    places.forEach(function(place) {
+      this.add(place)
+    }, this);
+
+  });
+
+  // var search_input = document.getElementById('search_input');
+  // var results_list = document.getElementById('results_list');
+
+  // search_input.addEventListener("input", function (e) {
+
+  //   var results = index.search(search_input.value);
+    
+  //   results_list.innerHTML = '';
+
+  //   if (!results.length) {
+  //     results_list.style.display = 'none';
+  //     return;
+  //   }
+
+  //   results.forEach(function(result){
+
+  //     var place_el = document.querySelector('[data-address="' + result.ref + '"]');
+
+  //     results_list.appendChild(place_el.cloneNode(true));
+  //   });
+
+  //   results_list.style.display = 'block';
+  // });
+
+  var category_toggles = document.querySelectorAll('.category_toggle');
+
+  category_toggles.forEach(function(el){
+
+    var category = el.getAttribute('data-category');
+
+    el.addEventListener("change", function (e) {
+
+      var checked = el.checked;
+      var place_els = document.querySelectorAll('.place');
+      
+      place_els.forEach(function(place_el){
+
+        var place_category = place_el.getAttribute('data-category');
+
+        if (place_category === category && checked)
+          place_el.style.display = 'block';
+
+        if (place_category === category && !checked)
+          place_el.style.display = 'none';        
+      });
+    });
+  });
+
+
+</script>
 </body>
 </html>
