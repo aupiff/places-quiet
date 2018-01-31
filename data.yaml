@@ -3,67 +3,82 @@ restaurants:
     - name: Shu Jiao Fu Zhou
       address: 118 Eldridge St, New York, NY 10002
       description: Fuzhounese dumpling house
+      date-added: Wed Jan 31 12:32:02 EST 2018
 
     - name: Lily's 74
       address: 307 Amsterdam Ave, New York, NY 10023
       description: Shanghainese restaurant
       comments: horrible food
+      date-added: Wed Jan 31 12:32:02 EST 2018
 
     - name: 2nd Avenue Deli
       address: 162 E 33rd St, New York, NY 10016
       description: Jewish Deli
+      date-added: Wed Jan 31 12:32:02 EST 2018
 
     - name: 99 Cents Fresh Pizza
       address: 383 Canal St, New York, NY 10013
       description: Dollar pizza
+      date-added: Wed Jan 31 12:32:02 EST 2018
 
     - name: 99 Cents Fresh Pizza
       address: 143 W 40th St, New York, NY 10018
       description: Dollar pizza
       notes: not verified
+      date-added: Wed Jan 31 12:32:02 EST 2018
 
     - name: 99 Cents Fresh Pizza
       address: 1723 Broadway, New York, NY 10019
       description: Dollar pizza
+      date-added: Wed Jan 31 12:32:02 EST 2018
 
     - name: 99 Cents Fresh Pizza
       address: 473 Lexington Ave, New York, NY 10017
       description: Dollar pizza
       notes: not verified
+      date-added: Wed Jan 31 12:32:02 EST 2018
 
     - name: 99 Cents Fresh Pizza
       address: 201 E 34th St B, New York, NY 10016
       description: Dollar pizza
       notes: not verified
+      date-added: Wed Jan 31 12:32:02 EST 2018
 
     - name: 99 Cents Fresh Pizza
       address: 151 E 43rd St, New York, NY 10017
       description: Dollar pizza
       notes: not verified
+      date-added: Wed Jan 31 12:32:02 EST 2018
 
     - name: Tal Bagels (Upper East Side on 86th)
       address: 333 East 86th St., New York, NY 10028
       description: Bagel Shop
+      date-added: Wed Jan 31 12:32:02 EST 2018
 
     - name: Tal Bagels (Upper East Side on Lexington)
       address: 1228 Lexington Ave, New York, NY 10028
       description: Bagel Shop
+      date-added: Wed Jan 31 12:32:02 EST 2018
 
     - name: Tal Bagels (Lower East Side)
       address: 357 1st Ave, New York, NY 10010
       description: Bagel Shop
+      date-added: Wed Jan 31 12:32:02 EST 2018
 
 cafes:
 
     - name: The Hungarian Pastry Shop
       address: 1030 Amsterdam Ave, New York, NY 10025
       description: Café & bakery
+      date-added: Wed Jan 31 12:32:02 EST 2018
 
     - name: New York Public Library for the Performing Arts Café
       address: 40 Lincoln Center Plaza, New York, NY 10023
       description: Café
+      date-added: Wed Jan 31 12:32:02 EST 2018
 
     - name: NYIT Metro Cafe
       address: 1849 Broadway, New York City, NY 10023
       description: Café
       comments: horrible food
+      date-added: Wed Jan 31 12:32:02 EST 2018
