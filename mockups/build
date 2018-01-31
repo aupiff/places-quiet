@@ -1,0 +1,47 @@
+#!/bin/sh
+ 
+mockup_dir="$(cd "$(dirname "$1")"; pwd)/$(basename "$1")"
+parent_dir="$(dirname "$mockup_dir")"
+project_dir="$(dirname "$parent_dir")"
+output="$mockup_dir/index.html" 
+template="$mockup_dir/index.mustache"
+data="$project_dir/data.yaml"
+
+# Kills the background python server process
+function cleanup {
+    kill -9 $pythonserver_pid
+}
+
+# Wipes the target HTML file, re-renders the template
+function render {
+    > "$output"
+    mustache "$data" "$template" >> "$output" 
+    echo "Rendered template..."
+}
+
+# Watches a directory for changes
+function check {
+    chsum1=`rsync -av $mockup_dir | openssl md5`
+    chsum2=$chsum1
+
+    while [ $chsum1 = $chsum2 ]
+    do
+        sleep 1
+        chsum2=`rsync -av $mockup_dir | openssl md5`
+    done
+    render
+    check $*
+}
+
+# Render the template before serving the folder
+render
+
+# Start the python server which serves the mockup
+cd $mockup_dir
+python -m SimpleHTTPServer 8686 &
+pythonserver_pid=$!
+trap cleanup EXIT
+echo "View the mockup -> http://localhost:8686"
+
+# Watch the mockup directory for changes
+check $*
