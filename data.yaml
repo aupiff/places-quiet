@@ -59,6 +59,11 @@ places:
       notes: not verified
       date-added: Wed Jan 31 12:32:02 EST 2018
 
+    - name: Little Italy
+      address: 2047 Broadway, New York, NY 10023
+      description: Pizza
+      date-added: Fri Feb  2 14:55:12 EST 2018
+
     - name: Tal Bagels (Upper East Side on 86th)
       category: Restaurant
       address: 333 East 86th St., New York, NY 10028
