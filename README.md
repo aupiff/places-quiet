@@ -1,4 +1,4 @@
-# places-quiet
+# [Places quiet](http://placesquiet.com)
 
 A list of public places that don't play music.
 
