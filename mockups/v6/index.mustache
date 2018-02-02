@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+  <title> </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+
+  <style type="text/css">
+  body{-webkit-font-smoothing: antialiased;
+} #places:empty:before {content: "No places..."}
+  a {text-decoration: none;}
+  </style>
+  <body class="ph4 mw7 center f5 lh-copy serif">
+
+    <div class="measure">
+      <span class="db mv6">Places Quiet<br><em>   A list of places in New York City that do not play music.</em></span> 
+
+    </div>
+    
+    <div class="mv5 mb3 cf pb2" style="border-bottom: 1px solid rgba(0,0,0,0.1)">
+
+  
+      <div class="fl pr4">
+        <a style="color:black">Restaurants and cafés</a>
+      </div>
+
+      <div class="fl pr4">
+        <a href="/shops">Shops</a>
+      </div>
+
+      <a class="fr" href="/contribute">How to contribute</a>
+
+    </div>
+
+    <div style="border-bottom: 1px solid rgba(0,0,0,0.1)" class="pb2">
+
+    {{#eateries}}
+      <p class="mv4 place"
+         data-category="{{category}}"
+         data-address="{{address}}"
+         data-name="{{name}}"
+         data-comments="{{comments}}"
+         data-description="{{description}}">
+        <span style="font-weight:400"><b>{{name}}</b></span> · <em>{{description}}</em><br>
+        <span class="">{{address}}</span>
+      </p>
+    {{/eateries}}
+
+  </div>
+  <div class="mv6">
+    Know someplace quiet?
+    <a href="">Share a quiet place</a>
+  </div>
+</div>
+
+</body>
+</html>

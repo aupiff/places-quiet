@@ -3,8 +3,14 @@
 mockup_dir="$(cd "$(dirname "$1")"; pwd)/$(basename "$1")"
 parent_dir="$(dirname "$mockup_dir")"
 project_dir="$(dirname "$parent_dir")"
-output="$mockup_dir/index.html" 
-template="$mockup_dir/index.mustache"
+
+index_output="$mockup_dir/index.html" 
+index_template="$mockup_dir/index.mustache"
+
+shops_output="$mockup_dir/shops/index.html" 
+shops_template="$mockup_dir/shops.mustache"
+
+
 data="$project_dir/data.yaml"
 
 # Kills the background python server process
@@ -14,8 +20,10 @@ function cleanup {
 
 # Wipes the target HTML file, re-renders the template
 function render {
-    > "$output"
-    mustache "$data" "$template" >> "$output" 
+    > "$index_output"
+    > "$shops_output"
+    mustache "$data" "$shops_template" >> "$shops_output" 
+    mustache "$data" "$index_template" >> "$index_output" 
     echo "Rendered template..."
 }
 
