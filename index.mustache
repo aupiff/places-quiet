@@ -11,14 +11,14 @@
 
   </style>
   <body class="pa4 center f5 lh-copy sans-serif" style="font-family: 'Work Sans', sans-serif;font-weight:300">
-   
+
     <div class="w-20 fl">
 
       <div class="mv4">
         <span style="font-weight:400" class="db">Places Quiet</span>
         A directory of places in New York City that don't play music.
       </div>
-  
+
       <label class="db mv1">
         <input type="checkbox" class="category_toggle mr1" data-category="Restaurant" checked> Restaurants
       </label>
@@ -67,9 +67,9 @@
     },
     {{/places}}
   ];
-  
+
   var index = lunr(function () {
-    
+
     this.ref('address');
     this.field('name');
     this.field('comments');
@@ -89,7 +89,7 @@
   // search_input.addEventListener("input", function (e) {
 
   //   var results = index.search(search_input.value);
-    
+
   //   results_list.innerHTML = '';
 
   //   if (!results.length) {
@@ -117,7 +117,7 @@
 
       var checked = el.checked;
       var place_els = document.querySelectorAll('.place');
-      
+
       place_els.forEach(function(place_el){
 
         var place_category = place_el.getAttribute('data-category');
@@ -126,7 +126,7 @@
           place_el.style.display = 'block';
 
         if (place_category === category && !checked)
-          place_el.style.display = 'none';        
+          place_el.style.display = 'none';
       });
     });
   });
