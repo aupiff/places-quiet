@@ -1,11 +1,5 @@
 shops:
 
-    - name: Aesop Upper West Side
-      category: Cosmetics
-      address: 219 Columbus Ave, New York, NY 10023
-      description: Plant-based products for body and hair.
-      date-added: Wed Fed 02 12:32:02 EST 2018
-
 eateries:
 
     - name: Shu Jiao Fu Zhou
