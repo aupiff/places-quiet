@@ -1,0 +1,4 @@
+.stack-work/
+publish.cabal
+*~
+config/aws.config
