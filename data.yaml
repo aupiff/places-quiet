@@ -1,5 +1,11 @@
 shops:
 
+    - name: Albertine
+      category: Bookstore
+      address: 972 5th Avenue, New York, NY 10075
+      description: Books in French and English
+      date-added: Sun Feb 18 14:57:38 EST 2018
+
 eateries:
 
     - name: Shu Jiao Fu Zhou
@@ -103,3 +109,15 @@ eateries:
       description: Café
       comments: horrible food
       date-added: Wed Jan 31 12:32:02 EST 2018
+
+    - name: E.A.T. Café
+      category: Restaurant
+      address: 1064 Madison Avenue, New York City, NY 10028
+      description: Gourmet food shop and café
+      date-added: Sun Feb 18 15:03:07 EST 2018
+
+    - name: Francesco's Pizza
+      category: Restaurant
+      address: 186 Columbus Ave, New York, NY 10023
+      description: Pizzeria
+      date-added: Sun Feb 18 15:03:07 EST 2018
