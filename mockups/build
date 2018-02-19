@@ -1,15 +1,14 @@
 #!/bin/sh
- 
+
 mockup_dir="$(cd "$(dirname "$1")"; pwd)/$(basename "$1")"
 parent_dir="$(dirname "$mockup_dir")"
 project_dir="$(dirname "$parent_dir")"
 
-index_output="$mockup_dir/index.html" 
+index_output="$mockup_dir/index.html"
 index_template="$mockup_dir/index.mustache"
 
-shops_output="$mockup_dir/shops/index.html" 
+shops_output="$mockup_dir/shops/index.html"
 shops_template="$mockup_dir/shops.mustache"
-
 
 data="$project_dir/data.yaml"
 
@@ -22,8 +21,8 @@ function cleanup {
 function render {
     > "$index_output"
     > "$shops_output"
-    mustache "$data" "$shops_template" >> "$shops_output" 
-    mustache "$data" "$index_template" >> "$index_output" 
+    mustache "$data" "$shops_template" >> "$shops_output"
+    mustache "$data" "$index_template" >> "$index_output"
     echo "Rendered template..."
 }
 

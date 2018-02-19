@@ -46,19 +46,13 @@ uploadFile folder filename config = do
 
 createRedirect :: String -> Config -> IO ()
 createRedirect folderName config = do
-    let redirect1 = Aws.ObjectKey . T.pack $ folderName
-        redirect2 = Aws.ObjectKey . T.pack $ folderName ++ "/"
+    let redirect = Aws.ObjectKey . T.pack $ folderName
         accessKeyId = awsAccessKeyId config
         secretAccessKey = awsSecretAccessKey config
         bucket = Aws.BucketName $ s3BucketName config
     env <- liftIO . Aws.newEnv $ Aws.FromKeys (Aws.AccessKey accessKeyId) (Aws.SecretKey secretAccessKey)
     void . runResourceT . Aws.runAWS env . Aws.within Aws.NorthVirginia $ do
-         Aws.send (set Aws.poContentType (Just "text/html") $ set Aws.poWebsiteRedirectLocation (Just . T.pack $ "https://www.placesquiet.com/" ++ folderName </> "index.html") $ set Aws.poACL (Just Aws.OPublicRead) $ Aws.putObject bucket redirect1 (Aws.toBody redirectText))
-         Aws.send (set Aws.poContentType (Just "text/html") $set Aws.poWebsiteRedirectLocation (Just . T.pack $ "https://www.placesquiet.com/" ++ folderName </> "index.html") $ set Aws.poACL (Just Aws.OPublicRead) $ Aws.putObject bucket redirect2 (Aws.toBody redirectText))
-
-
-redirectText :: Text
-redirectText = "redirect"
+         Aws.send (set Aws.poContentType (Just "text/html") $ set Aws.poWebsiteRedirectLocation (Just . T.pack $ "/" ++ folderName </> "index.html") $ set Aws.poACL (Just Aws.OPublicRead) $ Aws.putObject bucket redirect (Aws.toBody ("" :: Text)))
 
 
 uploadFolder :: String -> Config -> IO ()
