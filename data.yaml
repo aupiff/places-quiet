@@ -121,3 +121,15 @@ eateries:
       address: 186 Columbus Ave, New York, NY 10023
       description: Pizzeria
       date-added: Sun Feb 18 15:03:07 EST 2018
+
+    - name: Westside Restaurant
+      category: Restaurant
+      address: 2020 Broadway, New York, NY 10023
+      description: Diner
+      date-added: Sat Feb 24 16:26:18 EST 2018
+
+    - name: Vanessa's Dumpling House
+      category: Restaurant
+      address: 118 Eldridge St, New York, NY 10002
+      description: Dumpling Restaurant
+      date-added: Sat Feb 24 16:26:18 EST 2018
