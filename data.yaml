@@ -6,6 +6,12 @@ shops:
       description: Books in French and English
       date-added: Sun Feb 18 14:57:38 EST 2018
 
+    - name: Fairway Market (Upper West Side)
+      category: Supermarket
+      address: 2131 Broadway, New York, NY 10023
+      description: Specialty Food Retailer
+      date-added: Sun Feb 25 20:38:11 EST 2018
+
 eateries:
 
     - name: Shu Jiao Fu Zhou
@@ -133,3 +139,15 @@ eateries:
       address: 118 Eldridge St, New York, NY 10002
       description: Dumpling Restaurant
       date-added: Sat Feb 24 16:26:18 EST 2018
+
+    - name: Vanessa's Dumpling House (East Village)
+      category: Restaurant
+      address: 220 E 14th St, New York, NY 10003
+      description: Dumpling Restaurant
+      date-added: Sun Feb 25 20:36:15 EST 2018
+
+    - name: Fairway Market Café (Upper West Side)
+      category: Café
+      address: 2131 Broadway, New York, NY 10023
+      description: Café
+      date-added: Sun Feb 25 20:38:11 EST 2018
