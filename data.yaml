@@ -14,6 +14,12 @@ shops:
 
 eateries:
 
+    - name: Quatorze Bis
+      category: Restaurant
+      address: 323 E 79th St, New York, NY 10075
+      description: French Restaurant
+      date-added: Thu Aug 30 18:11:36 EDT 2018
+
     - name: Barney Greengrass
       category: Restaurant
       address: 541 Amsterdam Ave, New York, NY 10024
@@ -115,6 +121,18 @@ eateries:
       description: Café & bakery
       date-added: Wed Jan 31 12:32:02 EST 2018
 
+    - name: Congee Village
+      category: Restaurant
+      address: 100 Allen St, New York, NY 10002
+      description: Chinese Resraurant
+      date-added: Thu Aug 30 18:39:15 EDT 2018
+
+    - name: Trattoria Dell'Arte
+      category: Restaurant
+      address: 900 7th Ave, New York, NY 10106
+      description: Italian Resraurant
+      date-added: Thu Aug 30 18:39:15 EDT 2018
+
     - name: New York Public Library for the Performing Arts Café
       category: Café
       address: 40 Lincoln Center Plaza, New York, NY 10023
@@ -145,8 +163,26 @@ eateries:
       description: Dumpling Restaurant
       date-added: Sun Feb 25 20:36:15 EST 2018
 
+    - name: Vanessa's Dumpling House (Brooklyn)
+      category: Restaurant
+      address: 310 Bedford Ave, Brooklyn, NY 11211
+      description: Dumpling Restaurant
+      date-added: Thu Aug 30 18:42:00 EDT 2018
+
     - name: Fairway Market Café (Upper West Side)
       category: Café
       address: 2131 Broadway, New York, NY 10023
       description: Café
       date-added: Sun Feb 25 20:38:11 EST 2018
+
+    - name: New Amity
+      category: Restaurant
+      address: 1134 Madison Ave, New York, NY 10028
+      description: Diner
+      date-added: Thu Aug 30 18:32:19 EDT 2018
+
+    - name: Burrito Mariachi
+      category: Restaurant
+      address: 146 W 72nd St, New York, NY 10023
+      description: Chinese-Mexican Burrito Restaurant
+      date-added: Sun Feb 25 20:36:15 EST 2018

@@ -8,5 +8,5 @@ Quiet place data in [data.yaml](data.yaml).
 
 ```
 $ cd mockups
-$ ./build v4
+$ ./build v6
 ```
