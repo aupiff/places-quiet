@@ -10,3 +10,12 @@ Quiet place data in [data.yaml](data.yaml).
 $ cd mockups
 $ ./build v6
 ```
+
+## Publishing the site to S3
+
+``
+cd publish
+stack install
+cd ..
+publish mockups/v6
+``
