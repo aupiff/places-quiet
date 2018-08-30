@@ -14,6 +14,12 @@ shops:
 
 eateries:
 
+    - name: Barney Greengrass
+      category: Restaurant
+      address: 541 Amsterdam Ave, New York, NY 10024
+      description: Jewish Deli
+      date-added: Thu Aug 30 18:11:36 EDT 2018
+
     - name: Shu Jiao Fu Zhou
       category: Restaurant
       address: 118 Eldridge St, New York, NY 10002
@@ -79,6 +85,12 @@ eateries:
       description: Pizza
       date-added: Fri Feb  2 14:55:12 EST 2018
 
+    - name: Tal Bagels (Upper West Side on Broadway)
+      category: Restaurant
+      address: 2446 Broadway, New York, NY 10024
+      description: Bagel Shop
+      date-added: Thu Aug 30 18:11:50 EDT 2018
+
     - name: Tal Bagels (Upper East Side on 86th)
       category: Restaurant
       address: 333 East 86th St., New York, NY 10028
@@ -109,23 +121,10 @@ eateries:
       description: Café
       date-added: Wed Jan 31 12:32:02 EST 2018
 
-    - name: NYIT Metro Cafe
-      category: Café
-      address: 1849 Broadway, New York City, NY 10023
-      description: Café
-      comments: horrible food
-      date-added: Wed Jan 31 12:32:02 EST 2018
-
     - name: E.A.T. Café
       category: Restaurant
       address: 1064 Madison Avenue, New York City, NY 10028
       description: Gourmet food shop and café
-      date-added: Sun Feb 18 15:03:07 EST 2018
-
-    - name: Francesco's Pizza
-      category: Restaurant
-      address: 186 Columbus Ave, New York, NY 10023
-      description: Pizzeria
       date-added: Sun Feb 18 15:03:07 EST 2018
 
     - name: Westside Restaurant
