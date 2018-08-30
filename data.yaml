@@ -12,6 +12,30 @@ shops:
       description: Specialty Food Retailer
       date-added: Sun Feb 25 20:38:11 EST 2018
 
+    - name: Fairway Market (Chelsea)
+      category: Supermarket
+      address: 766 Avenue of the Americas, New York, NY 10010
+      description: Specialty Food Retailer
+      date-added: Sun Feb 25 20:38:11 EST 2018
+
+    - name: Fairway Market (Harlem)
+      category: Supermarket
+      address: 2328 12th Avenue, New York, NY 10027
+      description: Specialty Food Retailer
+      date-added: Thu Aug 30 19:38:12 EDT 2018
+
+    - name: Fairway Market (Upper East Side)
+      category: Supermarket
+      address: 240 East 86th Street, New York, NY 10028
+      description: Specialty Food Retailer
+      date-added: Sun Feb 25 20:38:11 EST 2018
+
+    - name: Fairway Market (Kips Bay)
+      category: Supermarket
+      address: 550 2nd Avenue, New York, NY 10016
+      description: Specialty Food Retailer
+      date-added: Sun Feb 25 20:38:11 EST 2018
+
 eateries:
 
     - name: Quatorze Bis
