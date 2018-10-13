@@ -5,6 +5,9 @@ shops:
       address: 972 5th Avenue, New York, NY 10075
       description: Books in French and English
       date-added: Sun Feb 18 14:57:38 EST 2018
+      coordinates:
+        latitude: 40.7766212
+        longitude: -73.9638355
 
     - name: Fairway Market (Upper West Side)
       category: Supermarket
@@ -23,6 +26,9 @@ shops:
       address: 2328 12th Avenue, New York, NY 10027
       description: Specialty Food Retailer
       date-added: Thu Aug 30 19:38:12 EDT 2018
+      coordinates:
+        latitude: 40.8184727
+        longitude: -73.9603926
 
     - name: Fairway Market (Upper East Side)
       category: Supermarket
@@ -42,13 +48,21 @@ eateries:
       category: Restaurant
       address: 323 E 79th St, New York, NY 10075
       description: French Restaurant
+      long-description: The best French restaurant in town.
       date-added: Thu Aug 30 18:11:36 EDT 2018
+      coordinates:
+        latitude: 40.7729497
+        longitude: -73.9537535
 
     - name: Barney Greengrass
       category: Restaurant
       address: 541 Amsterdam Ave, New York, NY 10024
       description: Jewish Deli
       date-added: Thu Aug 30 18:11:36 EDT 2018
+      coordinates:
+        latitude: 40.7879560
+        longitude: -73.9745549
+
 
     - name: Shu Jiao Fu Zhou
       category: Restaurant
@@ -60,7 +74,7 @@ eateries:
       category: Restaurant
       address: 307 Amsterdam Ave, New York, NY 10023
       description: Shanghainese restaurant
-      comments: horrible food
+      long-description: Horrible food.
       date-added: Wed Jan 31 12:32:02 EST 2018
 
     - name: 2nd Avenue Deli
