@@ -55,16 +55,26 @@
   <div class="w-third fl">
     <br>
     <em>Filters</em><br>
-    <label><input type="checkbox"> French</label>&nbsp; &nbsp; 
-    <label><input type="checkbox"> Chinese</label>&nbsp;
+      <div id="longitude-filter">
+        <input checked type="checkbox" name="east-side"/> East Side
+
+        <input checked type="checkbox" name="west-side"/> West Side
+      </div>
+
+      <div id="latitude-filter">
+        <input checked type="checkbox" name="downtown"/> Downtown
+
+        <input checked type="checkbox" name="midtown"/> Midtown
+
+        <input checked type="checkbox" name="uptown"/> Uptown
+      </div>
   </div>
 
-</div>
   <div class="cf"></div>
     <hr>
 
   <div class="w-third fl">
-      
+
 <Br><Br>
     </div>
 
@@ -72,36 +82,64 @@
   <div style="border-bottom: 1px solid rgba(0,0,0,0.1)"
     class="w-third fl">
 
-
       {{#eateries}}
 
       <p class="mv0 place"
         data-category="{{category}}"
         data-address="{{address}}"
         data-name="{{name}}"
-        data-comments="{{comments}}"
+        data-category="{{category}}"
+        data-address="{{address}}"
+        data-name="{{name}}"
+        data-longitude="{{coordinates.longitude}}"
+        data-latitude="{{coordinates.latitude}}"
+        data-long-description="{{long-description}}"
         data-description="{{description}}">
-        <span style="font-weight:400">
-          <b>{{name}}</b>
-        </span>·
-        <em>{{description}}</em>
-        <br>
-
-        <span class="pl4">The best French restaurant in New York City.</span>
-        <br>
-
+        <span style="font-weight:400"><b>{{name}}</b></span> · <em>{{description}}</em><br>
+        <span class="pl4">The best French restaurant in New York City.</span><br>
         <span class="pl4">{{address}}</span>
       </p>{{/eateries}}
     </div>
 
     <div class="measure-narrow fr">
+  </div>
+
+  <script>
+
+    let eastWestDivde = -73.9781989
+    let fiftyNinth = 40.1
+    let twentyFifth = 40.05
+
+    function render() {
+      var places = document.querySelectorAll(".place")
+      var eastSide = document.querySelector("[name='east-side']").checked
+      var westSide = document.querySelector("[name='west-side']").checked
+      var uptown = document.querySelector("[name='uptown']").checked
+      var midtown = document.querySelector("[name='midtown']").checked
+      var downtown = document.querySelector("[name='downtown']").checked
+
+      places.forEach(function(place) {
+        let latitude = parseFloat(place.getAttribute('data-latitude'))
+        let longitude = parseFloat(place.getAttribute('data-longitude'))
+        var satisfiesLongitude = (eastSide && longitude < eastWestDivde) || (westSide && longitude > eastWestDivde)
+        var satisfiesLatitude = (uptown && latitude < fiftyNinth) || (midtown || (latitude > fiftyNinth && latitude < twentyFifth)) || (downtown && latitude < twentyFifth)
+        var show = satisfiesLatitude && satisfiesLongitude
+        place.style.display = show ? 'block' : 'none'
+      })
+    }
+
+  document.querySelectorAll("[type='checkbox']").forEach(function(checkbox) {
+    checkbox.addEventListener('change', render)
+  })
+
+  render()
+
+  </script>
 
       <a href="/contribute/index.html"
         class="mv6"
         style="background:#fad635">Do you know someplace quiet?
         <span class="u">Share a quiet place</span>
       </a>
-    </div>
-  </div>
 </body>
 </html>
