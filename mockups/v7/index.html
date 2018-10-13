@@ -1,331 +1,565 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta charset="utf-8">
-  <title> </title>
+<head>
+  <meta charset="utf-8">
+  <title></title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
   <style type="text/css">
     @font-face {
-  font-family: 'Plex';
-  font-weight: bold;
-  font-style: normal;
-  src: url('/fonts/IBMPlexSerif-Bold.woff') format('woff'); 
-}
-  @font-face {
-  font-family: 'Plex';
-  font-weight: bold;
-  font-style: italic;
-  src: url('/fonts/IBMPlexSerif-BoldItalic.woff') format('woff'); 
-}
+      font-family: "Plex";
+      font-weight: bold;
+      font-style: normal;
+      src: url("/fonts/IBMPlexSerif-Bold.woff") format("woff");
+    }
+    @font-face {
+      font-family: "Plex";
+      font-weight: bold;
+      font-style: italic;
+      src: url("/fonts/IBMPlexSerif-BoldItalic.woff") format("woff");
+    }
 
-  @font-face {
-  font-family: 'Plex';
-  font-weight: 400;
-  font-style: normal;
-  src: url('/fonts/IBMPlexSerif-Regular.woff') format('woff'); 
-}
+    @font-face {
+      font-family: "Plex";
+      font-weight: 400;
+      font-style: normal;
+      src: url("/fonts/IBMPlexSerif-Regular.woff") format("woff");
+    }
 
-  @font-face {
-  font-family: 'Plex';
-  font-weight: 400;
-  font-style: italic;
-  src: url('/fonts/IBMPlexSerif-Italic.woff') format('woff'); 
-}
+    @font-face {
+      font-family: "Plex";
+      font-weight: 400;
+      font-style: italic;
+      src: url("/fonts/IBMPlexSerif-Italic.woff") format("woff");
+    }
 
-body {font-family: 'Plex';background:#f6f3e1;color:#344f26;}
-
+    body {
+      font-family: "Plex";
+      font-size: 16px;
+      background: #f9f7ea;
+      color: #344f26;
+    }
   </style>
-  <body class="ph4 mw7 center f5 lh-copy">
+</head>
+
+<body class="ph4  mv0 center lh-copy">
+
+  <div class="w-third fl">
+
+    <div class=" measure-narrow">
+      <b>Places Quiet</b><br>
+      <span class="db  measure-narrow">A directory of restaurants and shops in New York City that do not play music.
+      </span>
+  </div>
+</div>
+  <div class="w-third fl">
+    <br>
+    <em>Filters</em><br>
+    <label><input type="checkbox"> French</label>&nbsp; &nbsp; 
+    <label><input type="checkbox"> Chinese</label>&nbsp;
+  </div>
+
+</div>
+  <div class="cf"></div>
+    <hr>
+
+  <div class="w-third fl">
+      
+<Br><Br>
+    </div>
 
 
-    <div style="border-bottom: 1px solid rgba(0,0,0,0.1)" class="pb2">
+  <div style="border-bottom: 1px solid rgba(0,0,0,0.1)"
+    class="w-third fl">
+
+
 
       <p class="mv0 place"
-         data-category="Restaurant"
-         data-address="323 E 79th St, New York, NY 10075"
-         data-name="Quatorze Bis"
-         data-comments=""
-         data-description="French Restaurant">
-        <span style="font-weight:400"><b>Quatorze Bis</b></span> · <em>French Restaurant</em><br>
-        <span class="pl4">The best French restaurant in New York City.</span><br>
+        data-category="Restaurant"
+        data-address="323 E 79th St, New York, NY 10075"
+        data-name="Quatorze Bis"
+        data-comments=""
+        data-description="French restaurant">
+        <span style="font-weight:400">
+          <b>Quatorze Bis</b>
+        </span>·
+        <em>French restaurant</em>
+        <br>
+
+        <span class="pl4">The best French restaurant in New York City.</span>
+        <br>
+
         <span class="pl4">323 E 79th St, New York, NY 10075</span>
       </p>
       <p class="mv0 place"
-         data-category="Restaurant"
-         data-address="541 Amsterdam Ave, New York, NY 10024"
-         data-name="Barney Greengrass"
-         data-comments=""
-         data-description="Jewish Deli">
-        <span style="font-weight:400"><b>Barney Greengrass</b></span> · <em>Jewish Deli</em><br>
-        <span class="pl4">The best French restaurant in New York City.</span><br>
+        data-category="Restaurant"
+        data-address="541 Amsterdam Ave, New York, NY 10024"
+        data-name="Barney Greengrass"
+        data-comments=""
+        data-description="Jewish deli">
+        <span style="font-weight:400">
+          <b>Barney Greengrass</b>
+        </span>·
+        <em>Jewish deli</em>
+        <br>
+
+        <span class="pl4">The best French restaurant in New York City.</span>
+        <br>
+
         <span class="pl4">541 Amsterdam Ave, New York, NY 10024</span>
       </p>
       <p class="mv0 place"
-         data-category="Restaurant"
-         data-address="118 Eldridge St, New York, NY 10002"
-         data-name="Shu Jiao Fu Zhou"
-         data-comments=""
-         data-description="Fuzhounese dumpling house">
-        <span style="font-weight:400"><b>Shu Jiao Fu Zhou</b></span> · <em>Fuzhounese dumpling house</em><br>
-        <span class="pl4">The best French restaurant in New York City.</span><br>
+        data-category="Restaurant"
+        data-address="118 Eldridge St, New York, NY 10002"
+        data-name="Shu Jiao Fu Zhou"
+        data-comments=""
+        data-description="Fuzhounese dumpling house">
+        <span style="font-weight:400">
+          <b>Shu Jiao Fu Zhou</b>
+        </span>·
+        <em>Fuzhounese dumpling house</em>
+        <br>
+
+        <span class="pl4">The best French restaurant in New York City.</span>
+        <br>
+
         <span class="pl4">118 Eldridge St, New York, NY 10002</span>
       </p>
       <p class="mv0 place"
-         data-category="Restaurant"
-         data-address="307 Amsterdam Ave, New York, NY 10023"
-         data-name="Lily&#39;s 74"
-         data-comments="horrible food"
-         data-description="Shanghainese restaurant">
-        <span style="font-weight:400"><b>Lily&#39;s 74</b></span> · <em>Shanghainese restaurant</em><br>
-        <span class="pl4">The best French restaurant in New York City.</span><br>
+        data-category="Restaurant"
+        data-address="307 Amsterdam Ave, New York, NY 10023"
+        data-name="Lily’s 74"
+        data-comments="horrible food"
+        data-description="Shanghainese restaurant">
+        <span style="font-weight:400">
+          <b>Lily’s 74</b>
+        </span>·
+        <em>Shanghainese restaurant</em>
+        <br>
+
+        <span class="pl4">The best French restaurant in New York City.</span>
+        <br>
+
         <span class="pl4">307 Amsterdam Ave, New York, NY 10023</span>
       </p>
       <p class="mv0 place"
-         data-category="Restaurant"
-         data-address="162 E 33rd St, New York, NY 10016"
-         data-name="2nd Avenue Deli"
-         data-comments=""
-         data-description="Jewish Deli">
-        <span style="font-weight:400"><b>2nd Avenue Deli</b></span> · <em>Jewish Deli</em><br>
-        <span class="pl4">The best French restaurant in New York City.</span><br>
+        data-category="Restaurant"
+        data-address="162 E 33rd St, New York, NY 10016"
+        data-name="2nd Avenue Deli"
+        data-comments=""
+        data-description="Jewish deli">
+        <span style="font-weight:400">
+          <b>2nd Avenue Deli</b>
+        </span>·
+        <em>Jewish deli</em>
+        <br>
+
+        <span class="pl4">The best French restaurant in New York City.</span>
+        <br>
+
         <span class="pl4">162 E 33rd St, New York, NY 10016</span>
       </p>
       <p class="mv0 place"
-         data-category="Restaurant"
-         data-address="383 Canal St, New York, NY 10013"
-         data-name="99 Cents Fresh Pizza"
-         data-comments=""
-         data-description="Dollar pizza">
-        <span style="font-weight:400"><b>99 Cents Fresh Pizza</b></span> · <em>Dollar pizza</em><br>
-        <span class="pl4">The best French restaurant in New York City.</span><br>
+        data-category="Restaurant"
+        data-address="383 Canal St, New York, NY 10013"
+        data-name="99 Cents Fresh Pizza"
+        data-comments=""
+        data-description="Dollar pizza">
+        <span style="font-weight:400">
+          <b>99 Cents Fresh Pizza</b>
+        </span>·
+        <em>Dollar pizza</em>
+        <br>
+
+        <span class="pl4">The best French restaurant in New York City.</span>
+        <br>
+
         <span class="pl4">383 Canal St, New York, NY 10013</span>
       </p>
       <p class="mv0 place"
-         data-category="Restaurant"
-         data-address="143 W 40th St, New York, NY 10018"
-         data-name="99 Cents Fresh Pizza"
-         data-comments=""
-         data-description="Dollar pizza">
-        <span style="font-weight:400"><b>99 Cents Fresh Pizza</b></span> · <em>Dollar pizza</em><br>
-        <span class="pl4">The best French restaurant in New York City.</span><br>
+        data-category="Restaurant"
+        data-address="143 W 40th St, New York, NY 10018"
+        data-name="99 Cents Fresh Pizza"
+        data-comments=""
+        data-description="Dollar pizza">
+        <span style="font-weight:400">
+          <b>99 Cents Fresh Pizza</b>
+        </span>·
+        <em>Dollar pizza</em>
+        <br>
+
+        <span class="pl4">The best French restaurant in New York City.</span>
+        <br>
+
         <span class="pl4">143 W 40th St, New York, NY 10018</span>
       </p>
       <p class="mv0 place"
-         data-category="Restaurant"
-         data-address="1723 Broadway, New York, NY 10019"
-         data-name="99 Cents Fresh Pizza"
-         data-comments=""
-         data-description="Dollar pizza">
-        <span style="font-weight:400"><b>99 Cents Fresh Pizza</b></span> · <em>Dollar pizza</em><br>
-        <span class="pl4">The best French restaurant in New York City.</span><br>
+        data-category="Restaurant"
+        data-address="1723 Broadway, New York, NY 10019"
+        data-name="99 Cents Fresh Pizza"
+        data-comments=""
+        data-description="Dollar pizza">
+        <span style="font-weight:400">
+          <b>99 Cents Fresh Pizza</b>
+        </span>·
+        <em>Dollar pizza</em>
+        <br>
+
+        <span class="pl4">The best French restaurant in New York City.</span>
+        <br>
+
         <span class="pl4">1723 Broadway, New York, NY 10019</span>
       </p>
       <p class="mv0 place"
-         data-category="Restaurant"
-         data-address="473 Lexington Ave, New York, NY 10017"
-         data-name="99 Cents Fresh Pizza"
-         data-comments=""
-         data-description="Dollar pizza">
-        <span style="font-weight:400"><b>99 Cents Fresh Pizza</b></span> · <em>Dollar pizza</em><br>
-        <span class="pl4">The best French restaurant in New York City.</span><br>
+        data-category="Restaurant"
+        data-address="473 Lexington Ave, New York, NY 10017"
+        data-name="99 Cents Fresh Pizza"
+        data-comments=""
+        data-description="Dollar pizza">
+        <span style="font-weight:400">
+          <b>99 Cents Fresh Pizza</b>
+        </span>·
+        <em>Dollar pizza</em>
+        <br>
+
+        <span class="pl4">The best French restaurant in New York City.</span>
+        <br>
+
         <span class="pl4">473 Lexington Ave, New York, NY 10017</span>
       </p>
       <p class="mv0 place"
-         data-category="Restaurant"
-         data-address="201 E 34th St B, New York, NY 10016"
-         data-name="99 Cents Fresh Pizza"
-         data-comments=""
-         data-description="Dollar pizza">
-        <span style="font-weight:400"><b>99 Cents Fresh Pizza</b></span> · <em>Dollar pizza</em><br>
-        <span class="pl4">The best French restaurant in New York City.</span><br>
+        data-category="Restaurant"
+        data-address="201 E 34th St B, New York, NY 10016"
+        data-name="99 Cents Fresh Pizza"
+        data-comments=""
+        data-description="Dollar pizza">
+        <span style="font-weight:400">
+          <b>99 Cents Fresh Pizza</b>
+        </span>·
+        <em>Dollar pizza</em>
+        <br>
+
+        <span class="pl4">The best French restaurant in New York City.</span>
+        <br>
+
         <span class="pl4">201 E 34th St B, New York, NY 10016</span>
       </p>
       <p class="mv0 place"
-         data-category="Restaurant"
-         data-address="151 E 43rd St, New York, NY 10017"
-         data-name="99 Cents Fresh Pizza"
-         data-comments=""
-         data-description="Dollar pizza">
-        <span style="font-weight:400"><b>99 Cents Fresh Pizza</b></span> · <em>Dollar pizza</em><br>
-        <span class="pl4">The best French restaurant in New York City.</span><br>
+        data-category="Restaurant"
+        data-address="151 E 43rd St, New York, NY 10017"
+        data-name="99 Cents Fresh Pizza"
+        data-comments=""
+        data-description="Dollar pizza">
+        <span style="font-weight:400">
+          <b>99 Cents Fresh Pizza</b>
+        </span>·
+        <em>Dollar pizza</em>
+        <br>
+
+        <span class="pl4">The best French restaurant in New York City.</span>
+        <br>
+
         <span class="pl4">151 E 43rd St, New York, NY 10017</span>
       </p>
       <p class="mv0 place"
-         data-category="Restaurant"
-         data-address="2047 Broadway, New York, NY 10023"
-         data-name="Little Italy"
-         data-comments=""
-         data-description="Pizza">
-        <span style="font-weight:400"><b>Little Italy</b></span> · <em>Pizza</em><br>
-        <span class="pl4">The best French restaurant in New York City.</span><br>
+        data-category="Restaurant"
+        data-address="2047 Broadway, New York, NY 10023"
+        data-name="Little Italy"
+        data-comments=""
+        data-description="Pizza">
+        <span style="font-weight:400">
+          <b>Little Italy</b>
+        </span>·
+        <em>Pizza</em>
+        <br>
+
+        <span class="pl4">The best French restaurant in New York City.</span>
+        <br>
+
         <span class="pl4">2047 Broadway, New York, NY 10023</span>
       </p>
       <p class="mv0 place"
-         data-category="Restaurant"
-         data-address="2446 Broadway, New York, NY 10024"
-         data-name="Tal Bagels (Upper West Side on Broadway)"
-         data-comments=""
-         data-description="Bagel Shop">
-        <span style="font-weight:400"><b>Tal Bagels (Upper West Side on Broadway)</b></span> · <em>Bagel Shop</em><br>
-        <span class="pl4">The best French restaurant in New York City.</span><br>
+        data-category="Restaurant"
+        data-address="2446 Broadway, New York, NY 10024"
+        data-name="Tal Bagels (Upper West Side on Broadway)"
+        data-comments=""
+        data-description="Bagel Shop">
+        <span style="font-weight:400">
+          <b>Tal Bagels (Upper West Side on Broadway)</b>
+        </span>·
+        <em>Bagel Shop</em>
+        <br>
+
+        <span class="pl4">The best French restaurant in New York City.</span>
+        <br>
+
         <span class="pl4">2446 Broadway, New York, NY 10024</span>
       </p>
       <p class="mv0 place"
-         data-category="Restaurant"
-         data-address="333 East 86th St., New York, NY 10028"
-         data-name="Tal Bagels (Upper East Side on 86th)"
-         data-comments=""
-         data-description="Bagel Shop">
-        <span style="font-weight:400"><b>Tal Bagels (Upper East Side on 86th)</b></span> · <em>Bagel Shop</em><br>
-        <span class="pl4">The best French restaurant in New York City.</span><br>
+        data-category="Restaurant"
+        data-address="333 East 86th St., New York, NY 10028"
+        data-name="Tal Bagels (Upper East Side on 86th)"
+        data-comments=""
+        data-description="Bagel Shop">
+        <span style="font-weight:400">
+          <b>Tal Bagels (Upper East Side on 86th)</b>
+        </span>·
+        <em>Bagel Shop</em>
+        <br>
+
+        <span class="pl4">The best French restaurant in New York City.</span>
+        <br>
+
         <span class="pl4">333 East 86th St., New York, NY 10028</span>
       </p>
       <p class="mv0 place"
-         data-category="Restaurant"
-         data-address="1228 Lexington Ave, New York, NY 10028"
-         data-name="Tal Bagels (Upper East Side on Lexington)"
-         data-comments=""
-         data-description="Bagel Shop">
-        <span style="font-weight:400"><b>Tal Bagels (Upper East Side on Lexington)</b></span> · <em>Bagel Shop</em><br>
-        <span class="pl4">The best French restaurant in New York City.</span><br>
+        data-category="Restaurant"
+        data-address="1228 Lexington Ave, New York, NY 10028"
+        data-name="Tal Bagels (Upper East Side on Lexington)"
+        data-comments=""
+        data-description="Bagel Shop">
+        <span style="font-weight:400">
+          <b>Tal Bagels (Upper East Side on Lexington)</b>
+        </span>·
+        <em>Bagel Shop</em>
+        <br>
+
+        <span class="pl4">The best French restaurant in New York City.</span>
+        <br>
+
         <span class="pl4">1228 Lexington Ave, New York, NY 10028</span>
       </p>
       <p class="mv0 place"
-         data-category="Restaurant"
-         data-address="357 1st Ave, New York, NY 10010"
-         data-name="Tal Bagels (Lower East Side)"
-         data-comments=""
-         data-description="Bagel Shop">
-        <span style="font-weight:400"><b>Tal Bagels (Lower East Side)</b></span> · <em>Bagel Shop</em><br>
-        <span class="pl4">The best French restaurant in New York City.</span><br>
+        data-category="Restaurant"
+        data-address="357 1st Ave, New York, NY 10010"
+        data-name="Tal Bagels (Lower East Side)"
+        data-comments=""
+        data-description="Bagel Shop">
+        <span style="font-weight:400">
+          <b>Tal Bagels (Lower East Side)</b>
+        </span>·
+        <em>Bagel Shop</em>
+        <br>
+
+        <span class="pl4">The best French restaurant in New York City.</span>
+        <br>
+
         <span class="pl4">357 1st Ave, New York, NY 10010</span>
       </p>
       <p class="mv0 place"
-         data-category="Café"
-         data-address="1030 Amsterdam Ave, New York, NY 10025"
-         data-name="The Hungarian Pastry Shop"
-         data-comments=""
-         data-description="Café &amp; bakery">
-        <span style="font-weight:400"><b>The Hungarian Pastry Shop</b></span> · <em>Café &amp; bakery</em><br>
-        <span class="pl4">The best French restaurant in New York City.</span><br>
+        data-category="Café"
+        data-address="1030 Amsterdam Ave, New York, NY 10025"
+        data-name="The Hungarian Pastry Shop"
+        data-comments=""
+        data-description="Café &amp; bakery">
+        <span style="font-weight:400">
+          <b>The Hungarian Pastry Shop</b>
+        </span>·
+        <em>Café &amp; bakery</em>
+        <br>
+
+        <span class="pl4">The best French restaurant in New York City.</span>
+        <br>
+
         <span class="pl4">1030 Amsterdam Ave, New York, NY 10025</span>
       </p>
       <p class="mv0 place"
-         data-category="Restaurant"
-         data-address="100 Allen St, New York, NY 10002"
-         data-name="Congee Village"
-         data-comments=""
-         data-description="Chinese Resraurant">
-        <span style="font-weight:400"><b>Congee Village</b></span> · <em>Chinese Resraurant</em><br>
-        <span class="pl4">The best French restaurant in New York City.</span><br>
+        data-category="Restaurant"
+        data-address="100 Allen St, New York, NY 10002"
+        data-name="Congee Village"
+        data-comments=""
+        data-description="Chinese restaurant">
+        <span style="font-weight:400">
+          <b>Congee Village</b>
+        </span>·
+        <em>Chinese restaurant</em>
+        <br>
+
+        <span class="pl4">The best French restaurant in New York City.</span>
+        <br>
+
         <span class="pl4">100 Allen St, New York, NY 10002</span>
       </p>
       <p class="mv0 place"
-         data-category="Restaurant"
-         data-address="900 7th Ave, New York, NY 10106"
-         data-name="Trattoria Dell&#39;Arte"
-         data-comments=""
-         data-description="Italian Resraurant">
-        <span style="font-weight:400"><b>Trattoria Dell&#39;Arte</b></span> · <em>Italian Resraurant</em><br>
-        <span class="pl4">The best French restaurant in New York City.</span><br>
+        data-category="Restaurant"
+        data-address="900 7th Ave, New York, NY 10106"
+        data-name="Trattoria Dell’Arte"
+        data-comments=""
+        data-description="Italian restaurant">
+        <span style="font-weight:400">
+          <b>Trattoria Dell’Arte</b>
+        </span>·
+        <em>Italian restaurant</em>
+        <br>
+
+        <span class="pl4">The best French restaurant in New York City.</span>
+        <br>
+
         <span class="pl4">900 7th Ave, New York, NY 10106</span>
       </p>
       <p class="mv0 place"
-         data-category="Café"
-         data-address="40 Lincoln Center Plaza, New York, NY 10023"
-         data-name="New York Public Library for the Performing Arts Café"
-         data-comments=""
-         data-description="Café">
-        <span style="font-weight:400"><b>New York Public Library for the Performing Arts Café</b></span> · <em>Café</em><br>
-        <span class="pl4">The best French restaurant in New York City.</span><br>
+        data-category="Café"
+        data-address="40 Lincoln Center Plaza, New York, NY 10023"
+        data-name="New York Public Library for the Performing Arts Café"
+        data-comments=""
+        data-description="Café">
+        <span style="font-weight:400">
+          <b>New York Public Library for the Performing Arts Café</b>
+        </span>·
+        <em>Café</em>
+        <br>
+
+        <span class="pl4">The best French restaurant in New York City.</span>
+        <br>
+
         <span class="pl4">40 Lincoln Center Plaza, New York, NY 10023</span>
       </p>
       <p class="mv0 place"
-         data-category="Restaurant"
-         data-address="1064 Madison Avenue, New York City, NY 10028"
-         data-name="E.A.T. Café"
-         data-comments=""
-         data-description="Gourmet food shop and café">
-        <span style="font-weight:400"><b>E.A.T. Café</b></span> · <em>Gourmet food shop and café</em><br>
-        <span class="pl4">The best French restaurant in New York City.</span><br>
+        data-category="Restaurant"
+        data-address="1064 Madison Avenue, New York City, NY 10028"
+        data-name="E.A.T. Café"
+        data-comments=""
+        data-description="Gourmet food shop and café">
+        <span style="font-weight:400">
+          <b>E.A.T. Café</b>
+        </span>·
+        <em>Gourmet food shop and café</em>
+        <br>
+
+        <span class="pl4">The best French restaurant in New York City.</span>
+        <br>
+
         <span class="pl4">1064 Madison Avenue, New York City, NY 10028</span>
       </p>
       <p class="mv0 place"
-         data-category="Restaurant"
-         data-address="2020 Broadway, New York, NY 10023"
-         data-name="Westside Restaurant"
-         data-comments=""
-         data-description="Diner">
-        <span style="font-weight:400"><b>Westside Restaurant</b></span> · <em>Diner</em><br>
-        <span class="pl4">The best French restaurant in New York City.</span><br>
+        data-category="Restaurant"
+        data-address="2020 Broadway, New York, NY 10023"
+        data-name="Westside Restaurant"
+        data-comments=""
+        data-description="Diner">
+        <span style="font-weight:400">
+          <b>Westside Restaurant</b>
+        </span>·
+        <em>Diner</em>
+        <br>
+
+        <span class="pl4">The best French restaurant in New York City.</span>
+        <br>
+
         <span class="pl4">2020 Broadway, New York, NY 10023</span>
       </p>
       <p class="mv0 place"
-         data-category="Restaurant"
-         data-address="118 Eldridge St, New York, NY 10002"
-         data-name="Vanessa&#39;s Dumpling House"
-         data-comments=""
-         data-description="Dumpling Restaurant">
-        <span style="font-weight:400"><b>Vanessa&#39;s Dumpling House</b></span> · <em>Dumpling Restaurant</em><br>
-        <span class="pl4">The best French restaurant in New York City.</span><br>
+        data-category="Restaurant"
+        data-address="118 Eldridge St, New York, NY 10002"
+        data-name="Vanessa’s Dumpling House"
+        data-comments=""
+        data-description="Dumpling Restaurant">
+        <span style="font-weight:400">
+          <b>Vanessa’s Dumpling House</b>
+        </span>·
+        <em>Dumpling Restaurant</em>
+        <br>
+
+        <span class="pl4">The best French restaurant in New York City.</span>
+        <br>
+
         <span class="pl4">118 Eldridge St, New York, NY 10002</span>
       </p>
       <p class="mv0 place"
-         data-category="Restaurant"
-         data-address="220 E 14th St, New York, NY 10003"
-         data-name="Vanessa&#39;s Dumpling House (East Village)"
-         data-comments=""
-         data-description="Dumpling Restaurant">
-        <span style="font-weight:400"><b>Vanessa&#39;s Dumpling House (East Village)</b></span> · <em>Dumpling Restaurant</em><br>
-        <span class="pl4">The best French restaurant in New York City.</span><br>
+        data-category="Restaurant"
+        data-address="220 E 14th St, New York, NY 10003"
+        data-name="Vanessa’s Dumpling House (East Village)"
+        data-comments=""
+        data-description="Dumpling Restaurant">
+        <span style="font-weight:400">
+          <b>Vanessa’s Dumpling House (East Village)</b>
+        </span>·
+        <em>Dumpling Restaurant</em>
+        <br>
+
+        <span class="pl4">The best French restaurant in New York City.</span>
+        <br>
+
         <span class="pl4">220 E 14th St, New York, NY 10003</span>
       </p>
       <p class="mv0 place"
-         data-category="Restaurant"
-         data-address="310 Bedford Ave, Brooklyn, NY 11211"
-         data-name="Vanessa&#39;s Dumpling House (Brooklyn)"
-         data-comments=""
-         data-description="Dumpling Restaurant">
-        <span style="font-weight:400"><b>Vanessa&#39;s Dumpling House (Brooklyn)</b></span> · <em>Dumpling Restaurant</em><br>
-        <span class="pl4">The best French restaurant in New York City.</span><br>
+        data-category="Restaurant"
+        data-address="310 Bedford Ave, Brooklyn, NY 11211"
+        data-name="Vanessa’s Dumpling House (Brooklyn)"
+        data-comments=""
+        data-description="Dumpling Restaurant">
+        <span style="font-weight:400">
+          <b>Vanessa’s Dumpling House (Brooklyn)</b>
+        </span>·
+        <em>Dumpling Restaurant</em>
+        <br>
+
+        <span class="pl4">The best French restaurant in New York City.</span>
+        <br>
+
         <span class="pl4">310 Bedford Ave, Brooklyn, NY 11211</span>
       </p>
       <p class="mv0 place"
-         data-category="Café"
-         data-address="2131 Broadway, New York, NY 10023"
-         data-name="Fairway Market Café (Upper West Side)"
-         data-comments=""
-         data-description="Café">
-        <span style="font-weight:400"><b>Fairway Market Café (Upper West Side)</b></span> · <em>Café</em><br>
-        <span class="pl4">The best French restaurant in New York City.</span><br>
+        data-category="Café"
+        data-address="2131 Broadway, New York, NY 10023"
+        data-name="Fairway Market Café (Upper West Side)"
+        data-comments=""
+        data-description="Café">
+        <span style="font-weight:400">
+          <b>Fairway Market Café (Upper West Side)</b>
+        </span>·
+        <em>Café</em>
+        <br>
+
+        <span class="pl4">The best French restaurant in New York City.</span>
+        <br>
+
         <span class="pl4">2131 Broadway, New York, NY 10023</span>
       </p>
       <p class="mv0 place"
-         data-category="Restaurant"
-         data-address="1134 Madison Ave, New York, NY 10028"
-         data-name="New Amity"
-         data-comments=""
-         data-description="Diner">
-        <span style="font-weight:400"><b>New Amity</b></span> · <em>Diner</em><br>
-        <span class="pl4">The best French restaurant in New York City.</span><br>
+        data-category="Restaurant"
+        data-address="1134 Madison Ave, New York, NY 10028"
+        data-name="New Amity"
+        data-comments=""
+        data-description="Diner">
+        <span style="font-weight:400">
+          <b>New Amity</b>
+        </span>·
+        <em>Diner</em>
+        <br>
+
+        <span class="pl4">The best French restaurant in New York City.</span>
+        <br>
+
         <span class="pl4">1134 Madison Ave, New York, NY 10028</span>
       </p>
       <p class="mv0 place"
-         data-category="Restaurant"
-         data-address="146 W 72nd St, New York, NY 10023"
-         data-name="Burrito Mariachi"
-         data-comments=""
-         data-description="Chinese-Mexican Burrito Restaurant">
-        <span style="font-weight:400"><b>Burrito Mariachi</b></span> · <em>Chinese-Mexican Burrito Restaurant</em><br>
-        <span class="pl4">The best French restaurant in New York City.</span><br>
+        data-category="Restaurant"
+        data-address="146 W 72nd St, New York, NY 10023"
+        data-name="Burrito Mariachi"
+        data-comments=""
+        data-description="Chinese-Mexican Burrito Restaurant">
+        <span style="font-weight:400">
+          <b>Burrito Mariachi</b>
+        </span>·
+        <em>Chinese-Mexican Burrito Restaurant</em>
+        <br>
+
+        <span class="pl4">The best French restaurant in New York City.</span>
+        <br>
+
         <span class="pl4">146 W 72nd St, New York, NY 10023</span>
       </p>
+    </div>
 
-  </div>
-  <div class="mv6">
-    Know someplace quiet?
-    <a href="/contribute/index.html">Share a quiet place</a>
-  </div>
+    <div class="measure-narrow fr">
 
+      <a href="/contribute/index.html"
+        class="mv6"
+        style="background:#fad635">Do you know someplace quiet?
+        <span class="u">Share a quiet place</span>
+      </a>
+    </div>
+  </div>
 </body>
 </html>
