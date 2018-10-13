@@ -47,7 +47,7 @@ eateries:
     - name: Quatorze Bis
       category: Restaurant
       address: 323 E 79th St, New York, NY 10075
-      description: French Restaurant
+      description: French restaurant
       long-description: The best French restaurant in town.
       date-added: Thu Aug 30 18:11:36 EDT 2018
       coordinates:
@@ -57,7 +57,7 @@ eateries:
     - name: Barney Greengrass
       category: Restaurant
       address: 541 Amsterdam Ave, New York, NY 10024
-      description: Jewish Deli
+      description: Jewish deli
       date-added: Thu Aug 30 18:11:36 EDT 2018
       coordinates:
         latitude: 40.7879560
@@ -70,7 +70,7 @@ eateries:
       description: Fuzhounese dumpling house
       date-added: Wed Jan 31 12:32:02 EST 2018
 
-    - name: Lily's 74
+    - name: Lily’s 74
       category: Restaurant
       address: 307 Amsterdam Ave, New York, NY 10023
       description: Shanghainese restaurant
@@ -80,7 +80,7 @@ eateries:
     - name: 2nd Avenue Deli
       category: Restaurant
       address: 162 E 33rd St, New York, NY 10016
-      description: Jewish Deli
+      description: Jewish deli
       date-added: Wed Jan 31 12:32:02 EST 2018
 
     - name: 99 Cents Fresh Pizza
@@ -171,16 +171,16 @@ eateries:
     - name: Congee Village
       category: Restaurant
       address: 100 Allen St, New York, NY 10002
-      description: Chinese Resraurant
+      description: Chinese restaurant
       date-added: Thu Aug 30 18:39:15 EDT 2018
       coordinates:
         latitude: 40.7187024
         longitude: -73.9903118
 
-    - name: Trattoria Dell'Arte
+    - name: Trattoria Dell’Arte
       category: Restaurant
       address: 900 7th Ave, New York, NY 10106
-      description: Italian Resraurant
+      description: Italian restaurant
       date-added: Thu Aug 30 18:39:15 EDT 2018
 
     - name: New York Public Library for the Performing Arts Café
@@ -210,19 +210,19 @@ eateries:
         latitude: 40.7764202
         longitude: -73.9818555
 
-    - name: Vanessa's Dumpling House
+    - name: Vanessa’s Dumpling House
       category: Restaurant
       address: 118 Eldridge St, New York, NY 10002
       description: Dumpling Restaurant
       date-added: Sat Feb 24 16:26:18 EST 2018
 
-    - name: Vanessa's Dumpling House (East Village)
+    - name: Vanessa’s Dumpling House (East Village)
       category: Restaurant
       address: 220 E 14th St, New York, NY 10003
       description: Dumpling Restaurant
       date-added: Sun Feb 25 20:36:15 EST 2018
 
-    - name: Vanessa's Dumpling House (Brooklyn)
+    - name: Vanessa’s Dumpling House (Brooklyn)
       category: Restaurant
       address: 310 Bedford Ave, Brooklyn, NY 11211
       description: Dumpling Restaurant
