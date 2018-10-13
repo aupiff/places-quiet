@@ -41,13 +41,13 @@ eateries:
     - name: Quatorze Bis
       category: Restaurant
       address: 323 E 79th St, New York, NY 10075
-      description: French Restaurant
+      description: French restaurant
       date-added: Thu Aug 30 18:11:36 EDT 2018
 
     - name: Barney Greengrass
       category: Restaurant
       address: 541 Amsterdam Ave, New York, NY 10024
-      description: Jewish Deli
+      description: Jewish deli
       date-added: Thu Aug 30 18:11:36 EDT 2018
 
     - name: Shu Jiao Fu Zhou
@@ -66,7 +66,7 @@ eateries:
     - name: 2nd Avenue Deli
       category: Restaurant
       address: 162 E 33rd St, New York, NY 10016
-      description: Jewish Deli
+      description: Jewish deli
       date-added: Wed Jan 31 12:32:02 EST 2018
 
     - name: 99 Cents Fresh Pizza
@@ -148,13 +148,13 @@ eateries:
     - name: Congee Village
       category: Restaurant
       address: 100 Allen St, New York, NY 10002
-      description: Chinese Resraurant
+      description: Chinese restaurant
       date-added: Thu Aug 30 18:39:15 EDT 2018
 
     - name: Trattoria Dell'Arte
       category: Restaurant
       address: 900 7th Ave, New York, NY 10106
-      description: Italian Resraurant
+      description: Italian restaurant
       date-added: Thu Aug 30 18:39:15 EDT 2018
 
     - name: New York Public Library for the Performing Arts Café
