@@ -31,7 +31,7 @@ function check {
     chsum1=`rsync -av $mockup_dir | openssl md5`
     chsum2=$chsum1
 
-    while [ $chsum1 = $chsum2 ]
+    while [ "$chsum1" = "$chsum2" ]
     do
         sleep 1
         chsum2=`rsync -av $mockup_dir | openssl md5`
