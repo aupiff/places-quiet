@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+  <title> </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+  <style type="text/css">
+    @font-face {
+  font-family: 'Plex';
+  font-weight: bold;
+  font-style: normal;
+  src: url('/fonts/IBMPlexSerif-Bold.woff') format('woff'); 
+}
+  @font-face {
+  font-family: 'Plex';
+  font-weight: bold;
+  font-style: italic;
+  src: url('/fonts/IBMPlexSerif-BoldItalic.woff') format('woff'); 
+}
+
+  @font-face {
+  font-family: 'Plex';
+  font-weight: 400;
+  font-style: normal;
+  src: url('/fonts/IBMPlexSerif-Regular.woff') format('woff'); 
+}
+
+  @font-face {
+  font-family: 'Plex';
+  font-weight: 400;
+  font-style: italic;
+  src: url('/fonts/IBMPlexSerif-Italic.woff') format('woff'); 
+}
+
+body {font-family: 'Plex';background:#f6f3e1;color:#344f26;}
+
+  </style>
+  <body class="ph4 mw7 center f5 lh-copy">
+
+
+    <div style="border-bottom: 1px solid rgba(0,0,0,0.1)" class="pb2">
+
+    {{#eateries}}
+      <p class="mv0 place"
+         data-category="{{category}}"
+         data-address="{{address}}"
+         data-name="{{name}}"
+         data-comments="{{comments}}"
+         data-description="{{description}}">
+        <span style="font-weight:400"><b>{{name}}</b></span> · <em>{{description}}</em><br>
+        <span class="pl4">The best French restaurant in New York City.</span><br>
+        <span class="pl4">{{address}}</span>
+      </p>
+    {{/eateries}}
+
+  </div>
+  <div class="mv6">
+    Know someplace quiet?
+    <a href="/contribute/index.html">Share a quiet place</a>
+  </div>
+
+</body>
+</html>
