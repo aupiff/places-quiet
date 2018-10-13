@@ -56,7 +56,7 @@ eateries:
       description: Fuzhounese dumpling house
       date-added: Wed Jan 31 12:32:02 EST 2018
 
-    - name: Lily's 74
+    - name: Lily’s 74
       category: Restaurant
       address: 307 Amsterdam Ave, New York, NY 10023
       description: Shanghainese restaurant
@@ -151,7 +151,7 @@ eateries:
       description: Chinese restaurant
       date-added: Thu Aug 30 18:39:15 EDT 2018
 
-    - name: Trattoria Dell'Arte
+    - name: Trattoria Dell’Arte
       category: Restaurant
       address: 900 7th Ave, New York, NY 10106
       description: Italian restaurant
@@ -175,19 +175,19 @@ eateries:
       description: Diner
       date-added: Sat Feb 24 16:26:18 EST 2018
 
-    - name: Vanessa's Dumpling House
+    - name: Vanessa’s Dumpling House
       category: Restaurant
       address: 118 Eldridge St, New York, NY 10002
       description: Dumpling Restaurant
       date-added: Sat Feb 24 16:26:18 EST 2018
 
-    - name: Vanessa's Dumpling House (East Village)
+    - name: Vanessa’s Dumpling House (East Village)
       category: Restaurant
       address: 220 E 14th St, New York, NY 10003
       description: Dumpling Restaurant
       date-added: Sun Feb 25 20:36:15 EST 2018
 
-    - name: Vanessa's Dumpling House (Brooklyn)
+    - name: Vanessa’s Dumpling House (Brooklyn)
       category: Restaurant
       address: 310 Bedford Ave, Brooklyn, NY 11211
       description: Dumpling Restaurant
