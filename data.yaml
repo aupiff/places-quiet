@@ -123,47 +123,59 @@ eateries:
       notes: not verified
       date-added: Wed Jan 31 12:32:02 EST 2018
 
-    - name: Little Italy
-      category: Restaurant
-      address: 2047 Broadway, New York, NY 10023
-      description: Pizza
-      date-added: Fri Feb  2 14:55:12 EST 2018
-
     - name: Tal Bagels (Upper West Side on Broadway)
       category: Restaurant
       address: 2446 Broadway, New York, NY 10024
       description: Bagel Shop
       date-added: Thu Aug 30 18:11:50 EDT 2018
+      coordinates:
+        latitude: 40.7910099
+        longitude: -73.9741121
 
     - name: Tal Bagels (Upper East Side on 86th)
       category: Restaurant
       address: 333 East 86th St., New York, NY 10028
       description: Bagel Shop
       date-added: Wed Jan 31 12:32:02 EST 2018
+      coordinates:
+        latitude: 40.7774980
+        longitude: -73.9503988
 
     - name: Tal Bagels (Upper East Side on Lexington)
       category: Restaurant
       address: 1228 Lexington Ave, New York, NY 10028
       description: Bagel Shop
       date-added: Wed Jan 31 12:32:02 EST 2018
+      coordinates:
+        latitude:  40.7777126
+        longitude: -73.9570936
 
     - name: Tal Bagels (Lower East Side)
       category: Restaurant
       address: 357 1st Ave, New York, NY 10010
       description: Bagel Shop
       date-added: Wed Jan 31 12:32:02 EST 2018
+      coordinates:
+        latitude: 40.7355353
+        longitude: -73.9797508
 
     - name: The Hungarian Pastry Shop
       category: Café
       address: 1030 Amsterdam Ave, New York, NY 10025
       description: Café & bakery
       date-added: Wed Jan 31 12:32:02 EST 2018
+      coordinates:
+        latitude: 40.8035851
+        longitude: -73.9636651
 
     - name: Congee Village
       category: Restaurant
       address: 100 Allen St, New York, NY 10002
       description: Chinese Resraurant
       date-added: Thu Aug 30 18:39:15 EDT 2018
+      coordinates:
+        latitude: 40.7187024
+        longitude: -73.9903118
 
     - name: Trattoria Dell'Arte
       category: Restaurant
@@ -176,18 +188,27 @@ eateries:
       address: 40 Lincoln Center Plaza, New York, NY 10023
       description: Café
       date-added: Wed Jan 31 12:32:02 EST 2018
+      coordinates:
+        latitude: 40.7737390
+        longitude: -73.9849618
 
     - name: E.A.T. Café
       category: Restaurant
       address: 1064 Madison Avenue, New York City, NY 10028
       description: Gourmet food shop and café
       date-added: Sun Feb 18 15:03:07 EST 2018
+      coordinates:
+        latitude: 40.7773228
+        longitude: -73.9616646
 
     - name: Westside Restaurant
       category: Restaurant
       address: 2020 Broadway, New York, NY 10023
       description: Diner
       date-added: Sat Feb 24 16:26:18 EST 2018
+      coordinates:
+        latitude: 40.7764202
+        longitude: -73.9818555
 
     - name: Vanessa's Dumpling House
       category: Restaurant
